@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Bootstrap</title>
+  </head>
+  <body class="m-2">
+    <div class="container bg-warning">
+      <div class="row bg-primary text-white mt-2 p-3 border-bottom border-top">
+        <div class="col text-center">
+          Iscrizione
+        </div>
+      </div>
+      <form
+        method="POST"
+        action="https://www.w3schools.com/action_page.php"
+        class="needs-validation"
+        novalidate
+      >
+        <div class="row form-group pt-3">
+          <label for="inputNome" class="col-sm-5 col-form-label text-sm-right"
+            >Nome</label
+          >
+          <div class="col-sm-7">
+            <input
+              name="nome"
+              class="form-control"
+              id="inputNome"
+              placeholder="Come ti chiami?"
+              required
+            />
+            <div class="valid-feedback">
+              Bel nome!
+            </div>
+            <div class="invalid-feedback">
+              Inserisci il nome!
+            </div>
+          </div>
+        </div>
+        <div class="row form-group">
+          <label
+            for="inputCognome"
+            class="col-sm-5 col-form-label text-sm-right"
+            >Cognome</label
+          >
+          <div class="col-sm-7">
+            <input
+              name="cognome"
+              class="form-control"
+              id="inputCognome"
+              placeholder="Qual è il tuo cognome?"
+            />
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <label for="inputData" class="col-sm-5 col-form-label text-sm-right"
+            >Data di nascita</label
+          >
+          <div class="col-sm-7">
+            <input
+              type="date"
+              name="data"
+              class="form-control"
+              id="inputData"
+            />
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <div class="col-sm-5 text-sm-right">Sesso</div>
+          <div class="col-sm-7">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="sesso"
+                id="sessom"
+                value="m"
+              />
+              <label class="form-check-label" for="sessom">
+                Uomo
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="sesso"
+                id="sessof"
+                value="f"
+              />
+              <label class="form-check-label" for="sessof">
+                Donna
+              </label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="sesso"
+                id="sessoc"
+                value="c"
+              />
+              <label class="form-check-label" for="sessoc">
+                Cavoli miei
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="row form-group">
+          <label
+            for="inputNazione"
+            class="col-sm-5 col-form-label text-sm-right"
+            >Nazione</label
+          >
+          <div class="col-sm-7">
+            <select name="nazione" class="form-control" id="inputNazione">
+              <option>Germania</option>
+              <option>Italia</option>
+              <option>Burundi</option>
+              <option>Filippine</option>
+              <option>Usa</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <label for="inputEmail" class="col-sm-5 col-form-label text-sm-right"
+            >Indirizzo Email</label
+          >
+          <div class="col-sm-7">
+            <input
+              name="email"
+              type="email"
+              class="form-control"
+              id="inputEmail"
+              placeholder="Inserisci email"
+            />
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <label for="inputP1" class="col-sm-5 col-form-label text-sm-right"
+            >Password</label
+          >
+          <div class="col-sm-7">
+            <input
+              nome="password"
+              type="password"
+              class="form-control"
+              id="inputP1"
+              placeholder="Inserisci password"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <label for="inputP2" class="col-sm-5 col-form-label text-sm-right"
+            >Ripeti Password</label
+          >
+          <div class="col-sm-7">
+            <input
+              type="password"
+              class="form-control"
+              id="inputP2"
+              placeholder="Ripeti la password"
+            />
+          </div>
+        </div>
+
+        <div class="row form-group">
+          <div class="col text-center" <div class="form-check">
+            <input
+              name="termini"
+              class="form-check-input"
+              type="checkbox"
+              id="inpuTermini"
+              required
+            />
+            <label class="form-check-label" for="inpuTermini">
+              Accetta i termini
+            </label>
+          </div>
+        </div>
+        <div
+          class="row bg-primary text-white mt-2 p-3 border-bottom border-top"
+        >
+          <div class="col text-right">
+            <button type="submit" class="btn btn-success">Invia</button>
+            <button type="reset" class="btn btn-danger">
+              Cancella tutto
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        "use strict";
+        window.addEventListener(
+          "load",
+          function() {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName("needs-validation");
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener(
+                "submit",
+                function(event) {
+                  if (
+                    document.getElementById("inputP1").value !=
+                    document.getElementById("inputP2").value
+                  ) {
+                    alert("Le password sono diverse");
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                  }
+                  form.classList.add("was-validated");
+                },
+                false
+              );
+            });
+          },
+          false
+        );
+      })();
+    </script>
+  </body>
+</html>
